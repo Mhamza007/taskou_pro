@@ -10,3 +10,4 @@ export 'work_photos/work_photos.dart';
 export 'documents/documents.dart';
 export 'update_price/update_price.dart';
 export 'update_profile/update_profile.dart';
+export 'my_reviews/my_reviews.dart';

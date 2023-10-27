@@ -23,3 +23,4 @@ export 'get_work_photos_response.dart';
 export 'get_documents_response.dart';
 export 'forgot_password_response.dart';
 export 'verify_forgot_password_otp_response.dart';
+export 'handyman_review_response.dart';

@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>616490055606-6h0i59htlnnpkd6k61ks10ca15damceu.apps.googleusercontent.com</string>
+	<string>616490055606-nvhuq6j4fl9vipjfoljik5drpj9hs3g5.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.616490055606-6h0i59htlnnpkd6k61ks10ca15damceu</string>
+	<string>com.googleusercontent.apps.616490055606-nvhuq6j4fl9vipjfoljik5drpj9hs3g5</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>616490055606-9s3ttagdhagp6it1chhrjj0b5crah40r.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBtMThYCGDdSy3PQ8hM-eZ96o3n0TyW6Yc</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.taskouPro</string>
+	<string>com.app.TaskouHandymen1</string>
 	<key>PROJECT_ID</key>
 	<string>nordcal-tek-c8b69</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +31,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:616490055606:ios:1ac850e90c5df88e7f7317</string>
+	<string>1:616490055606:ios:fb6ba484ccbb5fff7f7317</string>
 	<key>DATABASE_URL</key>
 	<string>https://nordcal-tek-c8b69-default-rtdb.firebaseio.com</string>
 </dict>

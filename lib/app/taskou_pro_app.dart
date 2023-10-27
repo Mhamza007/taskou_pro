@@ -14,13 +14,19 @@ class TaskouProApp extends StatelessWidget {
       title: Res.string.appTitle,
       themeMode: ThemeMode.light,
       translations: Res.appTranslations,
-      locale: Res.appTranslations.locale,
+      locale: Res.appTranslations.getLocale(),
+      // locale: Res.appTranslations.locale,
       fallbackLocale: Res.appTranslations.fallbackLocale,
       localizationsDelegates: const [
         // Built-in localization of basic text for Material widgets
         GlobalMaterialLocalizations.delegate,
         // Built-in localization for text direction LTR/RTL
         GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('en'), // English
+        Locale('fr'), // French
       ],
       initialRoute: Routes.initial,
       onGenerateRoute: RouteGenerator.generateRoute,

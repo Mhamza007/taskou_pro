@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:reactive_forms/reactive_forms.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../configs/configs.dart';
 import '../../../../resources/resources.dart';
@@ -214,7 +215,7 @@ class SignUpCubit extends Cubit<SignUpState> {
         emit(
           state.copyWith(
             authStatus: AuthStatus.failed,
-            authMessage: Res.string.errorSigningUp,
+            authMessage: '${Res.string.errorSigningUp} ${e.toString()}',
             status: SignUpStatus.loaded,
           ),
         );
@@ -327,6 +328,26 @@ class SignUpCubit extends Cubit<SignUpState> {
   void signin() {
     debugPrint('sign in');
     Navigator.pushNamedAndRemoveUntil(context, Routes.signIn, (route) => false);
+  }
+
+  void openPrivacyPolicy() async {
+    try {
+      launchUrl(
+        Uri.parse(
+          'https://docs.google.com/document/d/1wDTnj02Hnx6yL7yUvlZlFjwxfJ0EI6eU/edit?usp=sharing&ouid=115202526282087628864&rtpof=true&sd=true',
+        ),
+      );
+    } catch (_) {}
+  }
+
+  void openTermsConditions() async {
+    try {
+      launchUrl(
+        Uri.parse(
+          '',
+        ),
+      );
+    } catch (_) {}
   }
 
   Future<void> _continueWithFirebaseResponse(

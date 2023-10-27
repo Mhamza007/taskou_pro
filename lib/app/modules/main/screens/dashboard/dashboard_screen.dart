@@ -171,7 +171,7 @@ class DashboardScreen extends StatelessWidget {
               settingsCallback: dashboardCubit.settings,
               helpCallback: dashboardCubit.help,
               subscriptionCallback: dashboardCubit.subscription,
-              myReviewCallback: () {},
+              myReviewCallback: dashboardCubit.myReviews,
               logoutCallback: dashboardCubit.logout,
             ),
             bottomNavigationBar: BottomNavigationBar(
@@ -180,7 +180,7 @@ class DashboardScreen extends StatelessWidget {
               selectedItemColor: Res.colors.chestnutRedColor,
               items: [
                 BottomNavigationBarItem(
-                  label: Res.string.home,
+                  label: Res.string.appTitle,
                   icon: SvgPicture.asset(
                     Res.drawable.findServicemanUnselected,
                   ),

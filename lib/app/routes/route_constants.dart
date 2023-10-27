@@ -21,4 +21,5 @@ abstract class Routes {
   static const subscription = '/subscription';
   static const tracking = '/tracking';
   static const chat = '/chat';
+  static const myReviews = '/my-reviews';
 }

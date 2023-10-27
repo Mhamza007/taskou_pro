@@ -8,7 +8,8 @@ import 'package:get_storage/get_storage.dart';
 import 'app/app.dart';
 import 'db/db.dart';
 import 'firebase_options.dart';
-import 'resources/values/values.dart';
+import 'resources/resources.dart';
+import 'resources/values/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,8 +19,10 @@ Future<void> main() async {
       await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,
       );
+      await GetStorage.init();
       await GetStorage.init(USER_BOX);
       await GetStorage.init(THEME_BOX);
+      await Res.appTranslations.initLocale();
 
       if (kReleaseMode) {
         CustomImageCache();

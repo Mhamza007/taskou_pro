@@ -334,4 +334,9 @@ class DashboardCubit extends Cubit<DashboardState> {
     //   _backgroundLocationservice.stopLocationService();
     // } catch (_) {}
   }
+
+  void myReviews() {
+    Navigator.pop(context);
+    Navigator.pushNamed(context, Routes.myReviews);
+  }
 }

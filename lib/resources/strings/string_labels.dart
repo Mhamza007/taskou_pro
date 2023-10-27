@@ -232,4 +232,8 @@ class Strings {
   String get pleaseUpdateAppToLatestVersion =>
       'please_update_app_to_latest_version'.tr;
   String get startTask => 'start_task'.tr;
+  String get changeLanguage => 'change_language'.tr;
+  String get reviews => 'reviews'.tr;
+  String get bgLocationDialogTitle => 'bg_location_dialog_title'.tr;
+  String get bgLocationDialogDescription => 'bg_location_dialog_description'.tr;
 }

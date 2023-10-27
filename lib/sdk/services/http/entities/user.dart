@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:taskou_pro/configs/configs.dart';
 
 import '../../../sdk.dart';
 import '../../../../app/app.dart';
@@ -441,6 +442,34 @@ class UserApi {
 
       if (response != null) {
         return StatusMessageResponse.fromJson(response);
+      } else {
+        throw NetworkException(
+          'No response data from server',
+        );
+      }
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Future<HandymanReviewResponse?> getHandymanReviews({
+    required String userToken,
+    required String handymanId,
+  }) async {
+    try {
+      dioBase?.options.baseUrl = HTTPConfig.userBaseURL;
+      dioBase?.options.headers.addAll({
+        'user_token': userToken,
+      });
+      var response = await dioBase?.post(
+        'getHandymanReviews',
+        data: {
+          "handyman_id": handymanId,
+        },
+      );
+
+      if (response != null) {
+        return HandymanReviewResponse.fromJson(response);
       } else {
         throw NetworkException(
           'No response data from server',

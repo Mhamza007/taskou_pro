@@ -35,6 +35,10 @@ class SettingsScreen extends StatelessWidget {
                   title: Res.string.changePassword,
                   callback: cubit.navigateToChangePassword,
                 ),
+                SettingsListItem(
+                  title: Res.string.changeLanguage,
+                  callback: cubit.changeLanguage,
+                ),
               ],
             ),
           );

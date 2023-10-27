@@ -125,6 +125,10 @@ class RouteGenerator {
             data: args,
           ),
         );
+      case Routes.myReviews:
+        return _PageTransition(
+          child: const MyReviewsScreen(),
+        );
       default:
         return _errorRoute();
     }

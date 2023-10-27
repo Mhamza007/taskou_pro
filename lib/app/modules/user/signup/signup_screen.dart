@@ -380,8 +380,29 @@ class SignUpScreen extends StatelessWidget {
                                             fontSize: 16,
                                           ),
                                     ),
+                                    // TextSpan(
+                                    //   text: Res.string.termsConditions,
+                                    //   style: TextStyle(
+                                    //     color: Res.colors.materialColor,
+                                    //     fontSize: 12,
+                                    //     decoration: TextDecoration.underline,
+                                    //     decorationColor:
+                                    //         Res.colors.materialColor,
+                                    //     decorationThickness: 2,
+                                    //   ),
+                                    //   recognizer: TapGestureRecognizer()
+                                    //     ..onTap = signUpCubit.openTermsConditions,
+                                    // ),
+                                    // TextSpan(
+                                    //   text: ' ${Res.string.and} ',
+                                    //   style: DefaultTextStyle.of(context)
+                                    //       .style
+                                    //       .copyWith(
+                                    //         fontSize: 12,
+                                    //       ),
+                                    // ),
                                     TextSpan(
-                                      text: Res.string.termsConditions,
+                                      text: Res.string.privacyPolicy,
                                       style: TextStyle(
                                         color: Res.colors.materialColor,
                                         fontSize: 12,
@@ -390,25 +411,8 @@ class SignUpScreen extends StatelessWidget {
                                             Res.colors.materialColor,
                                         decorationThickness: 2,
                                       ),
-                                    ),
-                                    TextSpan(
-                                      text: ' ${Res.string.and} ',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(
-                                            fontSize: 12,
-                                          ),
-                                    ),
-                                    TextSpan(
-                                      text: 'Privacy Policy',
-                                      style: TextStyle(
-                                        color: Res.colors.materialColor,
-                                        fontSize: 12,
-                                        decoration: TextDecoration.underline,
-                                        decorationColor:
-                                            Res.colors.materialColor,
-                                        decorationThickness: 2,
-                                      ),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = signUpCubit.openPrivacyPolicy,
                                     ),
                                   ],
                                 ),
